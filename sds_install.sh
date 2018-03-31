@@ -21,7 +21,7 @@ sh $(pwd)/sds_setting_up.sh;
 
 echo "" >> ~/.bashrc;
 echo "# Custom code" >> ~/.bashrc;
-echo "if [ -f  ~/.userrc]; then" >> ~/.bashrc;
+echo "if [ -f ~/.userrc ]; then" >> ~/.bashrc;
 echo "  . ~/.userrc;" >> ~/.bashrc;
 echo "fi" >> ~/.bashrc;
 
