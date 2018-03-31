@@ -1,5 +1,5 @@
 sudo apt-get install -y --fix-missing git htop cmake python-dev vim vim-nox curl tmux;
-curl -sL https://deb.nodesource.com/setup_8.x | sudo bash - ;\
+curl -sL https://deb.nodesource.com/setup_8.x | sudo bash - ;
 sudo apt-get install -y --fix-missing nodejs;
 rm -rf go1.10.linux-amd64.tar.gz;
 curl -O https://dl.google.com/go/go1.10.linux-amd64.tar.gz;
