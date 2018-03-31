@@ -1,7 +1,53 @@
 <keyboard>
-    <keybind key="A-r">
+    <keybind key="W-r">
         <action name="Execute">
             <command>dmenu_run</command>
+        </action>
+    </keybind>
+    <keybind key="W-e">
+        <action name="Execute">
+        <command>thunar</command>
+        <startupnotify>
+            <enabled>yes</enabled>
+            <name>Thunar</name>
+        </startupnotify>
+    </keybind>
+
+    <keybind key="W-t">
+        <action name="Execute">
+            <command>urxvt></command>
+        </action>
+    </keybind>
+
+    <keybind key="A-S-a">
+        <action name="MoveResizeTo">
+            <x>0</x>
+        </action>
+    </keybind>
+    <keybind key="A-S-d">
+        <action name="MoveResizeTo">
+            <x>-0</x>
+        </action>
+    </keybind>
+    <keybind key="A-S-w">
+        <action name="MoveResizeTo">
+            <y>0</y>
+        </action>
+    </keybind>
+    <keybind key="A-S-s">
+        <action name="MoveResizeTo">
+            <y>-0</y>
+        </action>
+    </keybind>
+
+    <keybind key="W-Tab">
+        <action name="NextWindow">
+            <allDesktops>yes</allDesktops>
+        </action>
+    </keybind>
+    <keybind key="W-S-Tab">
+        <action name="PreviousWindow">
+            <allDesktops>yes</allDesktops>
         </action>
     </keybind>
 </keyboard>
