@@ -1,5 +1,3 @@
-echo "########################";
-echo "# SDS: Update";
 git pull origin master;
 rm -rf ~/.gitconfig;
 rm -rf ~/.gitignore_global;
