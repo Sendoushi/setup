@@ -22,7 +22,7 @@ Rxvt.depth: 32
 Rxvt.background: #000000                                                                   
 Rxvt.foreground: #B4B4B4                                                                   
 Rxvt.scrollBar: false                                                                           
-Rxvt.font: xft:DroidSansMono:size=10:antialias=true
+# Rxvt.font: xft:DroidSansMono:size=10:antialias=true
 Rxvt.allow_bold: true
 Rxvt.letterSpace: -6
 Rxvt.lineSpace: -5
