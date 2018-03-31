@@ -1,4 +1,4 @@
-# git pull origin master;
+git pull origin master;
 rm -rf ~/.gitconfig;
 rm -rf ~/.gitignore_global;
 rm -rf ~/.userrc;

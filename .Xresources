@@ -17,3 +17,17 @@ URxvt*fading: 50
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 URxvt.perl-ext-common: default,clipboard
+
+Rxvt.depth: 32                                                                                  
+Rxvt.background: #000000                                                                   
+Rxvt.foreground: #B4B4B4                                                                   
+Rxvt.scrollBar: false                                                                           
+Rxvt.font: xft:DroidSansMono:size=10:antialias=true
+Rxvt.allow_bold: true
+Rxvt.letterSpace: -6
+Rxvt.lineSpace: -5
+Rxvt*fading: 50
+
+Rxvt.keysym.Shift-Control-V: perl:clipboard:paste
+Rxvt.iso14755: False
+Rxvt.perl-ext-common: default,clipboard
