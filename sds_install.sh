@@ -1,3 +1,11 @@
-sudo apt-get install -y --fix-missing git htop cmake python-dev vim vim-nox curl tmux; \
-curl -sL https://deb.nodesource.com/setup_8.x | sudo bash - ;\
-sudo apt-get install -y --fix-missing nodejs ;\
+sh sds_install_dependencies.sh; \
+sh sds_update.sh; \
+sh sds_setting_up.sh; \
+echo "" >> .bashrc; \
+echo "# Custom code" >> .bashrc; \
+echo "if [ -f  ~/.userrc]; then" >> .bashrc; \
+echo "  . ~/.userrc;" >> .bashrc; \
+echo "fi" >> .bashrc; \
+sh sds_install_de.sh; \
+echo "########################"; \
+echo "# SDS: Setup all done";

@@ -1,0 +1,8 @@
+[user]
+  name = Joel Santos
+  email = joel@sendoushi.com
+[core]
+  editor = vim
+  excludesfile = /home/sendoushi/.gitignore_global
+[color]
+  ui = auto
