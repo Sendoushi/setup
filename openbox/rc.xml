@@ -1,0 +1,7 @@
+<keyboard>
+    <keybind key="A-r">
+        <action name="DmenuRun">
+            <command>dmenu_run</command>
+        </action>
+    </keybind>
+</keyboard>
