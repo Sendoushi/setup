@@ -5,12 +5,14 @@
   - Install with:
   - Samba
   - SSH
-2. Run code
+2. Run code 
   ```bash
   sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade; \
   sudo apt-get install -y --fix-missing git ;\
   git clone https://github.com/Sendoushi/setup.git ~/setup ;\
-  sh ~/setup/sds_install.sh
+  cd setup; \
+  sh ~/sds_install.sh; \
+  cd ../;
   ``` 
 
 ### VirtualBox
