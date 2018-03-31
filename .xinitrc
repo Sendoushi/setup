@@ -1,2 +1,3 @@
 #!/bin/bash
-exec openbox-session
+exec openbox-session;
+xrdb ~/.Xresources;
