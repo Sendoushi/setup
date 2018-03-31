@@ -6,11 +6,12 @@
     </keybind>
     <keybind key="W-e">
         <action name="Execute">
-        <command>thunar</command>
-        <startupnotify>
-            <enabled>yes</enabled>
-            <name>Thunar</name>
-        </startupnotify>
+            <command>thunar</command>
+            <startupnotify>
+                <enabled>yes</enabled>
+                <name>Thunar</name>
+            </startupnotify>
+        </action>
     </keybind>
 
     <keybind key="W-t">
