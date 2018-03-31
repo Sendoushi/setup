@@ -1,6 +1,6 @@
 <keyboard>
     <keybind key="A-r">
-        <action name="DmenuRun">
+        <action name="Execute">
             <command>dmenu_run</command>
         </action>
     </keybind>
