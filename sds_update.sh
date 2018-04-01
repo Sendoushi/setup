@@ -16,6 +16,8 @@ rm -rf ~/.Xresources;
 rm -rf ~/.xinitrc;
 rm -rf ~/.config/openbox;
 rm -rf ~/.config/polybar;
+rm -rf ~/.themes;
+rm -rf ~/.gtkrc-2.0;
 sudo rm -rf /usr/lib/urxvt/perl/clipboard;
 
 cp .gitconfig ~/.gitconfig;
@@ -26,6 +28,9 @@ cp .npmrc ~/.npmrc;
 cp .vimrc ~/.vimrc;
 cp .Xresources ~/.Xresources;
 cp .xinitrc ~/.xinitrc;
+cp .gtkrc-2.0 ~/.gtkrc-2.0;
 sudo cp perlclipboard /usr/lib/urxvt/perl/clipboard;
 cp -rf openbox ~/.config/openbox;
 cp -rf polybar ~/.config/polybar;
+
+git clone https://github.com/dglava/arc-openbox.git ~/.themes;
