@@ -1,4 +1,4 @@
-git pull origin master;
+# git pull origin master;
 
 mkdir -p ~/npm;
 mkdir -p ~/work/src;
