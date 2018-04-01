@@ -12,8 +12,8 @@ URxvt.scrollBar: false
 !URxvt.font: xft:Courier New:pixelsize=12:antialias=true
 URxvt*font: xft:Monospace:pixelsize=12:antialias=true
 URxvt.allow_bold: true
-URxvt.letterSpace: -1
-# URxvt.lineSpace: -5
+URxvt.letterSpace: -2
+URxvt.lineSpace: 2
 URxvt*fading: 50
 
 # Plugins

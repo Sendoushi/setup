@@ -4,6 +4,11 @@
             <command>dmenu_run</command>
         </action>
     </keybind>
+    <keybind key="A-S-r">
+        <action name="Execute">
+            <command>dmenu_run</command>
+        </action>
+    </keybind>
     <keybind key="W-e">
         <action name="Execute">
             <command>thunar</command>
@@ -13,13 +18,25 @@
             </startupnotify>
         </action>
     </keybind>
-
+    <keybind key="A-S-e">
+        <action name="Execute">
+            <command>thunar</command>
+            <startupnotify>
+                <enabled>yes</enabled>
+                <name>Thunar</name>
+            </startupnotify>
+        </action>
+    </keybind>
     <keybind key="W-t">
         <action name="Execute">
             <command>urxvt></command>
         </action>
     </keybind>
-
+    <keybind key="A-S-t">
+        <action name="Execute">
+            <command>urxvt></command>
+        </action>
+    </keybind>
     <keybind key="A-S-a">
         <action name="MoveResizeTo">
             <x>0</x>
