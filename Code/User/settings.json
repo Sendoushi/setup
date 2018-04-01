@@ -1,0 +1,73 @@
+{
+    "git.autofetch": false,
+    "editor.renderIndentGuides": true,
+    "editor.tabSize": 2,
+    "editor.fontSize": 14,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": false,
+    "editor.codeLens": false,
+    "editor.minimap.enabled": false,
+
+    "html.format.enable": false,
+    "javascript.validate.enable": false,
+    "javascript.implicitProjectConfig.checkJs": true,
+    "typescript.format.enable": false,
+    "stylelint.enable": false,
+    "C_Cpp.intelliSenseEngine": "Default",
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/cache": true
+    },
+    "files.autoSave": "onFocusChange",
+
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/vendor": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/public": true,
+        "**/httpdocs": true,
+        "**/*.jpg": true,
+        "**/*.jpeg": true,
+        "**/*.png": true,
+        "**/*.gif": true,
+        "**/*.ttf": true,
+        "**/*.tga": true,
+        "**/*.dds": true,
+        "**/*.ico": true,
+        "**/*.eot": true,
+        "**/*.pdf": true,
+        "**/*.swf": true,
+        "**/*.jar": true,
+        "**/*.zip": true,
+        "**/cache": true
+    },
+
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
+
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    
+    "workbench.panel.location": "right",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+        "panel.background": "#212229",
+        "activityBar.background": "#1c1d22",
+        "sideBar.background": "#212229",
+        "editor.background": "#1c1d22",
+        "activityBarBadge.background": "#ff0000"
+    },
+    "workbench.iconTheme": "vscode-icons"
+}

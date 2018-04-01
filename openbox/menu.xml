@@ -6,19 +6,19 @@
                 file:///usr/share/openbox/menu.xsd">
 
 <menu id="root-menu" label="Openbox 3">
-  <item label="Visual Studio Code">
+  <item label="Visual studio code">
     <action name="Execute"><execute>code</execute></action>
   </item>
   <item label="Terminal emulator">
     <action name="Execute"><execute>x-terminal-emulator</execute></action>
   </item>
-  <item label="Web browser">
-    <action name="Execute"><execute>x-www-browser</execute></action>
+  <item label="File manager">
+    <action name="Execute"><execute>thunar</execute></action>
   </item>
   <item label="Firefox">
     <action name="Execute"><execute>firefox</execute></action>
   </item>
-  <item label="Google Chrome">
+  <item label="Google chrome">
     <action name="Execute"><execute>google-chrome-stable</execute></action>
   </item>
   <!-- This requires the presence of the 'openbox-menu' package to work -->
