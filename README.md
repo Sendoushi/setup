@@ -2,9 +2,7 @@
 
 1. Install ubuntu server
   - 10gb minimum, 30gb recommended for work
-  - Install with:
-  - Samba
-  - SSH
+  - Install with SSH
 2. Run code 
   ```bash
   sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade; \

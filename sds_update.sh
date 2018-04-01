@@ -15,6 +15,7 @@ rm -rf ~/.vimrc;
 rm -rf ~/.Xresources;
 rm -rf ~/.xinitrc;
 rm -rf ~/.config/openbox;
+rm -rf ~/.config/polybar;
 sudo rm -rf /usr/lib/urxvt/perl/clipboard;
 
 cp .gitconfig ~/.gitconfig;
@@ -27,3 +28,4 @@ cp .Xresources ~/.Xresources;
 cp .xinitrc ~/.xinitrc;
 sudo cp perlclipboard /usr/lib/urxvt/perl/clipboard;
 cp -rf openbox ~/.config/openbox;
+cp -rf polybar ~/.config/polybar;
