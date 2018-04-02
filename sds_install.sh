@@ -20,10 +20,10 @@ sh $(pwd)/sds_install_de.sh;
 
 echo "";
 echo "#######################################";
-echo "# SDS: Update configs";
+echo "# SDS: Set configs";
 echo "";
 
-sh $(pwd)/sds_update.sh;
+sh $(pwd)/sds_settings.sh;
 
 echo "";
 echo "#######################################";

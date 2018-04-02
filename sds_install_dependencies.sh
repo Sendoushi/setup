@@ -1,5 +1,5 @@
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade;
-sudo apt-get install -y --fix-missing git htop cmake python-dev vim vim-nox curl tmux alsa-utils autocutsel;
+sudo apt-get install -y --fix-missing git htop cmake python-dev vim vim-nox curl tmux alsa-utils autocutsel pulseaudio;
 
 rm -rf setup_* && curl -O https://deb.nodesource.com/setup_8.x && sudo sh setup_8.x && rm -rf setup_*;
 sudo apt-get update && sudo apt-get install -y --fix-missing nodejs;

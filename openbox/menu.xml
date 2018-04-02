@@ -21,6 +21,9 @@
   <item label="Google chrome">
     <action name="Execute"><execute>google-chrome-stable</execute></action>
   </item>
+  <item label="Audio control">
+    <action name="Execute"><execute>pavucontrol</execute></action>
+  </item>
   <!-- This requires the presence of the 'openbox-menu' package to work -->
   <menu id="/Debian" />
   <separator />

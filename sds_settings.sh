@@ -1,5 +1,3 @@
-# git pull origin master;
-
 mkdir -p ~/npm;
 mkdir -p ~/work/src;
 rm -rf ~/go;
@@ -17,11 +15,9 @@ rm -rf ~/.Xresources;
 rm -rf ~/.xinitrc;
 rm -rf ~/.config/openbox;
 rm -rf ~/.config/polybar;
-rm -rf ~/.themes;
 rm -rf ~/.gtkrc-2.0;
 rm -rf ~/.config/Code/User;
 rm -rf ~/.vscode;
-sudo rm -rf /usr/lib/urxvt/perl/clipboard;
 
 cp .gitconfig ~/.gitconfig;
 cp .gitignore_global ~/.gitignore_global;
@@ -32,14 +28,7 @@ cp .vimrc ~/.vimrc;
 cp .Xresources ~/.Xresources;
 cp .xinitrc ~/.xinitrc;
 cp .gtkrc-2.0 ~/.gtkrc-2.0;
-sudo cp perlclipboard /usr/lib/urxvt/perl/clipboard;
 cp -rf openbox ~/.config/openbox;
 cp -rf polybar ~/.config/polybar;
 cp -rf Code/User ~/.config/Code/User;
 cp -rf .vscode ~/.vscode;
-
-git clone https://github.com/dglava/arc-openbox.git ~/.themes;
-
-git clone https://github.com/shlinux/faenza-icon-theme.git faenza;
-./faenza/INSTALL;
-rm -rf faenza;
