@@ -26,6 +26,6 @@ URxvt*fading: 50
 
 # Plugins
 
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755: False
-URxvt.perl-ext-common: default,clipboard
+# URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+# URxvt.iso14755: False
+# URxvt.perl-ext-common: default,clipboard

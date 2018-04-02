@@ -1,3 +1,4 @@
 xrdb -merge ~/.Xresources &
 xsetroot -solid Grey15
+autocutsel &
 polybar main
