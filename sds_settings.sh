@@ -31,4 +31,4 @@ cp .gtkrc-2.0 ~/.gtkrc-2.0;
 cp -rf openbox ~/.config/openbox;
 cp -rf polybar ~/.config/polybar;
 cp -rf Code/User ~/.config/Code/User;
-cp -rf .vscode ~/.vscode;
+cp -rf vscode ~/.vscode;
