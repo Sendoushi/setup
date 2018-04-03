@@ -1,4 +1,4 @@
-sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg openbox-themes lxappearance thunar firefox;
+sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg lxappearance thunar firefox;
 sudo update-alternatives --set x-terminal-emulator /usr/bin/urxvt;
 sudo apt-get install -y libxss1 libappindicator1 libindicator7;
 
