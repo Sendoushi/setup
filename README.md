@@ -9,7 +9,7 @@
   sudo apt-get install -y --fix-missing git ;\
   git clone https://github.com/Sendoushi/setup.git ~/setup ;\
   cd setup; \
-  sh ~/sds_install.sh; \
+  sh sds_install.sh; \
   cd ../;
   ``` 
 
