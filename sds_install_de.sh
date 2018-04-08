@@ -19,7 +19,7 @@ wget https://noto-website-2.storage.googleapis.com/pkgs/Noto-hinted.zip;
 # finally install all
 sudo apt-get update;
 
-sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg lxappearance thunar firefox libxss1 libappindicator1 libindicator7 sublime-text code polybar;
+sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg lxappearance thunar firefox libxss1 libappindicator1 libindicator7 sublime-text code polybar apt-transport-https;
 sudo update-alternatives --set x-terminal-emulator /usr/bin/urxvt;;
 sudo dpkg -i google-chrome*;
 
