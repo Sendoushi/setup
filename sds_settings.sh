@@ -4,6 +4,7 @@ rm -rf ~/go;
 ln -s ~/work ~/go;
 mkdir -p ~/.config;
 mkdir -p ~/.config/Code/User;
+mkdir -p ~/.config/sublime-text-3;
 
 rm -rf ~/.gitconfig;
 rm -rf ~/.gitignore_global;
@@ -32,3 +33,4 @@ cp -rf openbox ~/.config/openbox;
 cp -rf polybar ~/.config/polybar;
 cp -rf Code/User ~/.config/Code/User;
 cp -rf vscode ~/.vscode;
+cp -rf sublime-text-3/* ~/.config/sublime-text-3/;

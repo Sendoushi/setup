@@ -1,0 +1,37 @@
+// SublimeLinter Settings - User
+{
+  "debug": false,
+  "delay": 0.25,
+  "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+  "lint_mode": "background",
+  "no_column_highlights_line": false,
+  "paths": {
+    "linux": [],
+    "osx": [],
+    "windows": []
+  },
+  "show_marks_in_minimap": true,
+  "syntax_map": {
+    "html (django)": "html",
+    "html (rails)": "html",
+    "html 5": "html",
+    "php": "html",
+    "python django": "python"
+  },
+  "styles": [
+    {
+      "mark_style": "squiggly_underline",
+      "priority": 1,
+      "scope": "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter",
+      "icon": "dot",
+      "types": ["warning"]
+    },
+    {
+      "mark_style": "squiggly_underline",
+      "priority": 1,
+      "scope": "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
+      "icon": "dot",
+      "types": ["error"]
+    }
+  ]
+}

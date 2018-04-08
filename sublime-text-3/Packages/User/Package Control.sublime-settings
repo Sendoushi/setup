@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"All Autocomplete",
+		"AutoFileName",
+		"BracketHighlighter",
+		"DocBlockr",
+		"EditorConfig",
+		"Emmet",
+		"GitGutter",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-contrib-stylelint",
+		"SublimeLinter-eslint",
+		"SublimeLinter-json",
+		"SublimeLinter-tslint",
+		"TabsExtra",
+		"Theme - Monokai Pro",
+		"TrailingSpaces"
+	]
+}
