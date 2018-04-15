@@ -14,16 +14,24 @@ wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add - ;
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -;
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
+sudo add-apt-repository ppa:jtaylor/keepass;
+
 wget https://noto-website-2.storage.googleapis.com/pkgs/Noto-hinted.zip;
 
 # finally install all
 sudo apt-get update;
 
-sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg lxappearance nautilus nautilus-dropbox firefox libxss1 libappindicator1 libindicator7 sublime-text code polybar apt-transport-https git-gui;
-sudo update-alternatives --set x-terminal-emulator /usr/bin/urxvt;
+sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg lxappearance nautilus nautilus-dropbox firefox libxss1 libappindicator1 libindicator7 sublime-text code polybar apt-transport-https git-gui tint2 xdotool gimp keepass2;
 sudo dpkg -i google-chrome*;
 
 sudo apt-get install -y --fix-broken;
+
+# force to install afterwards
+sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg lxappearance nautilus nautilus-dropbox firefox libxss1 libappindicator1 libindicator7 sublime-text code polybar apt-transport-https git-gui tint2 xdotool gimp keepass2;
+sudo dpkg -i google-chrome*;
+
+# update alternatives
+sudo update-alternatives --set x-terminal-emulator /usr/bin/urxvt;
 
 sudo install -d -m755 /usr/share/fonts/noto;
 sudo unzip Noto-hinted.zip -d /usr/share/fonts/noto;

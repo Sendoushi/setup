@@ -5,6 +5,7 @@ ln -s ~/work ~/go;
 mkdir -p ~/.config;
 mkdir -p ~/.config/Code/User;
 mkdir -p ~/.config/sublime-text-3;
+mkdir -p ~/.config/tint2;
 
 rm -rf ~/.gitconfig;
 rm -rf ~/.gitignore_global;
@@ -17,8 +18,7 @@ rm -rf ~/.xinitrc;
 rm -rf ~/.config/openbox;
 rm -rf ~/.config/polybar;
 rm -rf ~/.gtkrc-2.0;
-rm -rf ~/.config/Code/User;
-rm -rf ~/.vscode;
+
 
 cp .gitconfig ~/.gitconfig;
 cp .gitignore_global ~/.gitignore_global;
@@ -34,3 +34,4 @@ cp -rf polybar ~/.config/polybar;
 cp -rf Code/User ~/.config/Code/User;
 cp -rf vscode ~/.vscode;
 cp -rf sublime-text-3/* ~/.config/sublime-text-3/;
+cp -rf tint2 ~/.config/tint2;
