@@ -62,7 +62,7 @@ border_color_pressed = #000000 100
 
 #-------------------------------------
 # Panel
-panel_items = TFSCBEELEE
+panel_items = TFSCBLEE
 panel_size = 100% 30
 panel_margin = 0 0
 #  panel_padding = 8 10 4
@@ -209,49 +209,49 @@ separator_padding = 0 0
 
 #-------------------------------------
 # Executor: Volume icon
-execp = new
-execp_command = echo "🔉"
-execp_interval = 1
-execp_has_icon = 0
-execp_cache_icon = 1
-execp_continuous = 0
-execp_markup = 1
-execp_lclick_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -10%"
-execp_rclick_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +10%"
-execp_mclick_command =
-execp_uwheel_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +10%"
-execp_dwheel_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -10%"
-execp_font = Noto Mono Regular 11
-execp_font_color = #ffffff 50
-execp_font_color_hover = #ffffff 100
-execp_padding = 0
-execp_background_id = 0
-execp_centered = 1
-execp_icon_w = 0
-execp_icon_h = 0
+# execp = new
+# execp_command = echo "🔉"
+# execp_interval = 1
+# execp_has_icon = 0
+# execp_cache_icon = 1
+# execp_continuous = 0
+# execp_markup = 1
+# execp_lclick_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -10%"
+# execp_rclick_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +10%"
+# execp_mclick_command =
+# execp_uwheel_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +10%"
+# execp_dwheel_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -10%"
+# execp_font = Noto Mono Regular 11
+# execp_font_color = #ffffff 50
+# execp_font_color_hover = #ffffff 100
+# execp_padding = 0
+# execp_background_id = 0
+# execp_centered = 1
+# execp_icon_w = 0
+# execp_icon_h = 0
 
 #-------------------------------------
 # Executor: volume percentage
-execp = new
-execp_command = pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,' | awk '{ printf "%s%", $o}'
-execp_interval = 1
-execp_has_icon = 0
-execp_cache_icon = 1
-execp_continuous = 0
-execp_markup = 1
-execp_lclick_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -10%"
-execp_rclick_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +10%"
-execp_mclick_command =
-execp_uwheel_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +10%"
-execp_dwheel_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -10%"
-execp_font = Noto Mono Regular 10
-execp_font_color = #ffffff 70
-execp_font_color_hover = #ffffff 100
-execp_padding = 0
-execp_background_id = 0
-execp_centered = 1
-execp_icon_w = 0
-execp_icon_h = 0
+# execp = new
+# execp_command = pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,' | awk '{ printf "%s%", $o}'
+# execp_interval = 1
+# execp_has_icon = 0
+# execp_cache_icon = 1
+# execp_continuous = 0
+# execp_markup = 1
+# execp_lclick_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -10%"
+ #execp_rclick_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +10%"
+# execp_mclick_command =
+# execp_uwheel_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +10%"
+# execp_dwheel_command = sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -10%"
+# execp_font = Noto Mono Regular 10
+# execp_font_color = #ffffff 70
+# execp_font_color_hover = #ffffff 100
+# execp_padding = 0
+# execp_background_id = 0
+# execp_centered = 1
+# execp_icon_w = 0
+# execp_icon_h = 0
 
 #-------------------------------------
 # Executor: Go left
