@@ -6,8 +6,8 @@
                 file:///usr/share/openbox/menu.xsd">
 
 <menu id="root-menu" label="Openbox 3">
-  <item label="Visual studio code">
-    <action name="Execute"><execute>code</execute></action>
+  <item label="Sublime">
+    <action name="Execute"><execute>subl</execute></action>
   </item>
   <item label="Terminal emulator">
     <action name="Execute"><execute>x-terminal-emulator</execute></action>

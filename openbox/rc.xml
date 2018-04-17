@@ -320,19 +320,19 @@
 
   <!-- SDS Custom -->
   <!-- Keyboard extras -->
-  <keybind key="XF86AudioRaiseVolume">  
+  <keybind key="XF86AudioRaiseVolume">
     <action name="Execute">
       <execute>sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"</execute>
     </action>
   </keybind>
 
-  <keybind key="XF86AudioLowerVolume">  
+  <keybind key="XF86AudioLowerVolume">
     <action name="Execute">
       <execute>sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"</execute>
     </action>
   </keybind>
 
-  <keybind key="XF86AudioMute">  
+  <keybind key="XF86AudioMute">
     <action name="Execute">
       <execute>sh -c "pactl set-sink-mute 0 true ; pactl set-sink-volume 0 0%"</execute>
     </action>
@@ -351,19 +351,19 @@
   </keybind>
   <keybind key="W-e">
     <action name="Execute">
-        <command>thunar</command>
+        <command>nautilus</command>
         <startupnotify>
             <enabled>yes</enabled>
-            <name>Thunar</name>
+            <name>Nautilus</name>
         </startupnotify>
     </action>
   </keybind>
   <keybind key="A-S-e">
     <action name="Execute">
-        <command>thunar</command>
+        <command>nautilus</command>
         <startupnotify>
             <enabled>yes</enabled>
-            <name>Thunar</name>
+            <name>Nautilus</name>
         </startupnotify>
     </action>
   </keybind>
@@ -452,7 +452,7 @@
     </mousebind>
     <mousebind button="A-Right" action="Drag">
       <action name="Resize"/>
-    </mousebind> 
+    </mousebind>
 
     <mousebind button="A-Middle" action="Press">
       <action name="Lower"/>
@@ -704,7 +704,7 @@
     <!-- Menus -->
     <mousebind button="Middle" action="Press">
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
-    </mousebind> 
+    </mousebind>
     <mousebind button="Right" action="Press">
       <action name="ShowMenu"><menu>root-menu</menu></action>
     </mousebind>
@@ -784,7 +784,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not 
+    # each rule element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>

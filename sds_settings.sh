@@ -19,7 +19,6 @@ rm -rf ~/.config/openbox;
 rm -rf ~/.config/polybar;
 rm -rf ~/.gtkrc-2.0;
 
-
 cp .gitconfig ~/.gitconfig;
 cp .gitignore_global ~/.gitignore_global;
 cp .userrc ~/.userrc;
@@ -29,9 +28,9 @@ cp .vimrc ~/.vimrc;
 cp .Xresources ~/.Xresources;
 cp .xinitrc ~/.xinitrc;
 cp .gtkrc-2.0 ~/.gtkrc-2.0;
-cp -rf openbox ~/.config/openbox;
-cp -rf polybar ~/.config/polybar;
-cp -rf Code/User ~/.config/Code/User;
-cp -rf vscode ~/.vscode;
+cp -rf openbox/* ~/.config/openbox/;
+cp -rf polybar/* ~/.config/polybar/;
+cp -rf Code/User/* ~/.config/Code/User/;
+cp -rf vscode/* ~/.vscode/;
 cp -rf sublime-text-3/* ~/.config/sublime-text-3/;
-cp -rf tint2 ~/.config/tint2;
+cp -rf tint2/* ~/.config/tint2/;
