@@ -34,3 +34,7 @@ cp -rf Code/User/* ~/.config/Code/User/;
 cp -rf vscode/* ~/.vscode/;
 cp -rf sublime-text-3/* ~/.config/sublime-text-3/;
 cp -rf tint2/* ~/.config/tint2/;
+
+sudo groupadd realtime;
+sudo usermod -a -G realtime sendoushi;
+sudo usermod -a -G audio sendoushi;
