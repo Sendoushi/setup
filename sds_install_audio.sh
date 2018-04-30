@@ -11,7 +11,8 @@ rm -rf kxstudio3*
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos-gcc5_9.5.1~kxstudios3_all.deb
 rm -rf kxstudio3*
 
-sudo apt-get install -y --fix-missing ardour pulseaudio pavucontrol cadence jack-tools ant qjackctl pulseaudio-module-* jack-mixer jamin pulseaudio-utils;
+# sudo apt-get install -y --fix-missing ardour pulseaudio pavucontrol cadence jack-tools ant qjackctl pulseaudio-module-* jack-mixer jamin pulseaudio-utils audacious qmidiroute;
+sudo apt-get install -y --fix-missing ardour pulseaudio pavucontrol cadence jack-tools ant qjackctl pulseaudio-module-* non-mixer pulseaudio-utils audacious;
 
 # update alternatives
 

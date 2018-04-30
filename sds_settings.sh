@@ -6,6 +6,8 @@ mkdir -p ~/.config;
 mkdir -p ~/.config/Code/User;
 mkdir -p ~/.config/sublime-text-3;
 mkdir -p ~/.config/tint2;
+mkdir -p ~/.config/openbox;
+mkdir -p ~/.config/polybar;
 
 rm -rf ~/.gitconfig;
 rm -rf ~/.gitignore_global;
@@ -15,8 +17,10 @@ rm -rf ~/.npmrc;
 rm -rf ~/.vimrc;
 rm -rf ~/.Xresources;
 rm -rf ~/.xinitrc;
-rm -rf ~/.config/openbox;
-rm -rf ~/.config/polybar;
+rm -rf ~/.config/Code/User/*;
+rm -rf ~/.config/openbox/*;
+rm -rf ~/.config/polybar/*;
+rm -rf ~/.config/tint2/*;
 rm -rf ~/.gtkrc-2.0;
 
 cp .gitconfig ~/.gitconfig;

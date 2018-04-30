@@ -156,6 +156,7 @@ launcher_item_app = /usr/share/applications/firefox.desktop
 launcher_item_app = /usr/share/applications/google-chrome.desktop
 launcher_item_app = /usr/share/applications/gimp.desktop
 launcher_item_app = /usr/share/applications/keepass2.desktop
+launcher_item_app = /usr/share/applications/wicd.desktop
 launcher_item_app = /usr/share/applications/pavucontrol.desktop
 
 #-------------------------------------

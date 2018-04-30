@@ -21,7 +21,7 @@ wget https://noto-website-2.storage.googleapis.com/pkgs/Noto-hinted.zip;
 # finally install all
 sudo apt-get update;
 
-sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg lxappearance nautilus nautilus-dropbox firefox libxss1 libappindicator1 libindicator7 sublime-text code polybar apt-transport-https git-gui tint2 xdotool gimp keepass2 lxinput arandr;
+sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg lxappearance nautilus nautilus-dropbox firefox libxss1 libappindicator1 libindicator7 sublime-text code polybar apt-transport-https git-gui tint2 xdotool gimp keepass2 lxinput arandr wicd wicd-gtk;
 sudo dpkg -i google-chrome*;
 
 sudo apt-get install -y --fix-broken;
