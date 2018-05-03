@@ -1,8 +1,15 @@
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade;
-sudo apt-get install -y --fix-missing git htop cmake python-dev vim vim-nox curl tmux alsa-utils autocutsel pulseaudio;
+sudo apt-get install -y --fix-missing git htop cmake python-dev vim vim-nox ack-grep curl tmux alsa-utils autocutsel pulseaudio;
+
+# install vim dependencies
+mkdir -p ~/.vim/colors;
+wget https://raw.githubusercontent.com/dracula/vim/master/colors/dracula.vim -O ~/.vim/colors/dracula.vim;
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
 
 rm -rf setup_* && curl -O https://deb.nodesource.com/setup_8.x && sudo sh setup_8.x && rm -rf setup_*;
 sudo apt-get update && sudo apt-get install -y --fix-missing nodejs;
+
+npm install -g stylelint eslint typescript;
 
 rm -rf go1*;
 curl -O https://dl.google.com/go/go1.10.linux-amd64.tar.gz;
