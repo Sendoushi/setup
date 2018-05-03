@@ -5,6 +5,10 @@ sudo apt-get install -y --fix-missing git htop cmake python-dev vim vim-nox ack-
 mkdir -p ~/.vim/colors;
 wget https://raw.githubusercontent.com/dracula/vim/master/colors/dracula.vim -O ~/.vim/colors/dracula.vim;
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
+vim +PluginInstall +qall;
+pushd ~/.vim/bundle/vimproc.vim;
+  make;
+popd;
 
 rm -rf setup_* && curl -O https://deb.nodesource.com/setup_8.x && sudo sh setup_8.x && rm -rf setup_*;
 sudo apt-get update && sudo apt-get install -y --fix-missing nodejs;
