@@ -30,7 +30,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
 mkdir -p ~/bin;
 curl https://beyondgrep.com/ack-2.22-single-file > ~/bin/ack && chmod 0755 ~/bin/ack;
 vim +PluginInstall +qall;
-~/.vim/bundle/YouCompleteMe/install.py --all;
+~/.vim/bundle/YouCompleteMe/install.py --js-completer --clang-completer --rust-completer --go-completer;
 pushd ~/.vim/bundle/vimproc.vim;
   make;
 popd;
