@@ -5,6 +5,9 @@ export GOPATH=$HOME/work;
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin;
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH";
 
+# Set colors
+export TERM='rxvt-unicode-256color'
+
 # Profile
 # get current branch in git repo
 function parse_git_branch() {

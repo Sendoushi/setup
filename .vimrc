@@ -1,6 +1,6 @@
 set nocompatible
-
 filetype off
+set clipboard=unnamed,unnamedplus " default the clipboard
 
 " set layout colors
 syntax on 

@@ -1,3 +1,4 @@
+mkdir -p ~/bin;
 mkdir -p ~/npm;
 mkdir -p ~/work/src;
 rm -rf ~/go;

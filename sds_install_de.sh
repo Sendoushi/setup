@@ -27,7 +27,7 @@ sudo dpkg -i google-chrome*;
 sudo apt-get install -y --fix-broken;
 
 # force to install afterwards
-sudo apt-get install -y --fix-missing dmenu rxvt-unicode xclip openbox obconf xinit build-essential pkg-config xorg lxappearance nautilus nautilus-dropbox firefox libxss1 libappindicator1 libindicator7 sublime-text code polybar apt-transport-https git-gui tint2 xdotool gimp keepass2;
+sudo apt-get install -y --fix-missing dmenu rxvt-unicode rxvt-unicode-256color xclip openbox obconf xinit build-essential pkg-config xorg lxappearance nautilus nautilus-dropbox firefox libxss1 libappindicator1 libindicator7 sublime-text code polybar apt-transport-https git-gui tint2 xdotool gimp keepass2;
 sudo dpkg -i google-chrome*;
 
 # update alternatives
