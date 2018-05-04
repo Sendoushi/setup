@@ -28,6 +28,7 @@ set hlsearch "higlight matches
 set backspace=indent,eol,start
 
 " old settings
+set hidden
 set title
 set number
 set history=1000
@@ -62,6 +63,9 @@ Plugin 'jiangmiao/auto-pairs' " parenthesis, brackets...
 Plugin 'scrooloose/nerdcommenter' " comment/uncomment plugin 
 Plugin 'nathanaelkane/vim-indent-guides' " show indent guides
 Plugin 'chrisbra/NrrwRgn' " edit code on the side
+Plugin 'ludovicchabant/vim-gutentags' " management for tags / help with auto complete
+Plugin 'Valloric/YouCompleteMe' " auto completion
+Plugin 'mgee/lightline-bufferline' " buffer tabs
 
 " linters
 Plugin 'editorconfig/editorconfig-vim' " editorconfig related
@@ -78,7 +82,8 @@ call vundle#end()
 filetype plugin indent on   
 
 " nerdtree
-let NERDTreeShowHidden=1 " show hidden files on nerd treeA
+let NERDTreeShowHidden = 1 " show hidden files on nerd tree
+let NERDTreeQuitOnOpen = 1
 autocmd StdinReadPre * let s:std_in=1 " start nerd tree when no file selected
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif " start nerd tree when no file selected
 
@@ -88,11 +93,15 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_signs = 1
+let g:syntastic_enable_highlighting = 1
+let g:syntastic_aggregate_errors = 1
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exe = 'npm run eslint --'
+let g:syntastic_quiet_messages = { "level": "warnings" }
 
 " TODO: check eslint, tslint and stylelint
 
@@ -109,3 +118,21 @@ map <Leader>p :LeaderfFile<CR>
 
 " Start esearch prompt autofilled with one of g:esearch.use initial patterns
 call esearch#map('<Leader>f', 'esearch')
+
+" Buffer
+
+" To open a new empty buffer
+" This replaces :tabnew which I used to bind to this mapping
+" nmap <leader>t :enew<cr>
+nmap <leader>n :enew<cr>
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>w :bp <BAR> bd #<CR>
+

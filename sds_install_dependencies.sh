@@ -1,17 +1,6 @@
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade;
 sudo apt-get install -y --fix-missing git htop cmake python-dev vim vim-nox ack-grep curl tmux alsa-utils autocutsel pulseaudio;
 
-# install vim dependencies
-mkdir -p ~/.vim/colors;
-wget https://raw.githubusercontent.com/dracula/vim/master/colors/dracula.vim -O ~/.vim/colors/dracula.vim;
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
-mkdir -p ~/bin;
-curl https://beyondgrep.com/ack-2.22-single-file > ~/bin/ack && chmod 0755 ~/bin/ack;
-vim +PluginInstall +qall;
-pushd ~/.vim/bundle/vimproc.vim;
-  make;
-popd;
-
 rm -rf setup_* && curl -O https://deb.nodesource.com/setup_8.x && sudo sh setup_8.x && rm -rf setup_*;
 sudo apt-get update && sudo apt-get install -y --fix-missing nodejs;
 
@@ -32,3 +21,16 @@ sudo sh -c 'echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu x
 sudo apt-get -y update && sudo apt-get -y upgrade;
 
 sudo apt-get install -y mongodb-org;
+
+# install vim dependencies
+mkdir -p ~/.vim/colors;
+sudo apt-get install -y ctags python-dev python3-dev;
+wget https://raw.githubusercontent.com/dracula/vim/master/colors/dracula.vim -O ~/.vim/colors/dracula.vim;
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
+mkdir -p ~/bin;
+curl https://beyondgrep.com/ack-2.22-single-file > ~/bin/ack && chmod 0755 ~/bin/ack;
+vim +PluginInstall +qall;
+~/.vim/bundle/YouCompleteMe/install.py --all;
+pushd ~/.vim/bundle/vimproc.vim;
+  make;
+popd;
