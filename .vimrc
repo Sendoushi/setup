@@ -27,6 +27,8 @@ set hlsearch "higlight matches
 " set backspace
 set backspace=indent,eol,start
 
+let g:autofmt_autosave = 1 " auto fmt the file
+
 " old settings
 set hidden
 set title
