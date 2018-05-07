@@ -68,6 +68,7 @@ Plugin 'chrisbra/NrrwRgn' " edit code on the side
 Plugin 'ludovicchabant/vim-gutentags' " management for tags / help with auto complete
 Plugin 'Valloric/YouCompleteMe' " auto completion
 Plugin 'bling/vim-bufferline' " buffer tabs
+Plugin 'vimwiki/vimwiki' " wiki for todos and stuff
 
 " linters
 Plugin 'editorconfig/editorconfig-vim' " editorconfig related
@@ -109,11 +110,14 @@ let g:syntastic_quiet_messages = { "level": "warnings" }
 
 " lightline
 let g:lightline = {}
-let g:lightline.separator = { 'left': '', 'right': '' }
+let g:lightline.separator = { 'left': '▶', 'right': '' }
 let g:lightline.subseparator = { 'left': '', 'right': '' }
 let g:lightline.tabline = { 'left': [ ['tabs']  ], 'right': [ ['close']  ] }
 set showtabline=2  " Show tabline
 set guioptions-=e  " Don't use GUI tabline
+
+" vimwiki
+let g:vimwiki_list = [{ 'path': '~/Dropbox/wiki' }]
 
 """""""""""""""""""""""""""""""""""""""""""""""
 " Mapping section
