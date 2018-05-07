@@ -67,7 +67,7 @@ Plugin 'nathanaelkane/vim-indent-guides' " show indent guides
 Plugin 'chrisbra/NrrwRgn' " edit code on the side
 Plugin 'ludovicchabant/vim-gutentags' " management for tags / help with auto complete
 Plugin 'Valloric/YouCompleteMe' " auto completion
-Plugin 'mgee/lightline-bufferline' " buffer tabs
+Plugin 'bling/vim-bufferline' " buffer tabs
 
 " linters
 Plugin 'editorconfig/editorconfig-vim' " editorconfig related
@@ -101,14 +101,19 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_signs = 1
 let g:syntastic_enable_highlighting = 1
 let g:syntastic_aggregate_errors = 1
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = 'npm run eslint --'
+let g:syntastic_javascript_checkers = ['eslint', 'tslint']
+let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 let g:syntastic_quiet_messages = { "level": "warnings" }
 
 " TODO: check eslint, tslint and stylelint
 
 " lightline
-" TODO: git branch, git status and project might be interesting
+let g:lightline = {}
+let g:lightline.separator = { 'left': '', 'right': '' }
+let g:lightline.subseparator = { 'left': '', 'right': '' }
+let g:lightline.tabline = { 'left': [ ['tabs']  ], 'right': [ ['close']  ] }
+set showtabline=2  " Show tabline
+set guioptions-=e  " Don't use GUI tabline
 
 """""""""""""""""""""""""""""""""""""""""""""""
 " Mapping section
@@ -133,6 +138,12 @@ nmap <leader>l :bnext<CR>
 
 " Move to the previous buffer
 nmap <leader>h :bprevious<CR>
+
+" easier navigation between split windows
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
