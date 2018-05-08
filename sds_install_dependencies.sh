@@ -34,3 +34,9 @@ vim +PluginInstall +qall;
 pushd ~/.vim/bundle/vimproc.vim;
   make;
 popd;
+
+# instal grv
+wget -O grv https://github.com/rgburke/grv/releases/download/v0.1.3/grv_v0.1.3_linux64;
+chmod +x ./grv;
+mkdir -p ~/bin;
+mv grv ~/bin/grv;
