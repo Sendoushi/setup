@@ -3,7 +3,8 @@
 1. Install ubuntu server
   - 10gb minimum, 30gb recommended for work
   - Install with SSH
-2. Run code 
+2. Change `/etc/apt/sources.list` repos to `https://us.*`
+3. Run code 
   ```bash
   sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade; \
   sudo apt-get install -y --fix-missing git ;\
